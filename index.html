@@ -7,217 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
-        .section {
-            display: none;
-        }
-        .center-buttons {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .center-buttons button {
-            margin-right: 10px;
-        }
-
-        .center-buttons button:last-child {
-            margin-right: 0;
-        }
-        .about-me {
-            padding: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            background-color: #333;
-            border-radius: 10px;
-        }
-
-        .about-me h1 {
-            margin-bottom: 10px;
-        }
-
-        .about-me p {
-            margin-bottom: 0;
-        }
-        .services {
-            display: flex;
-        }
-
-        .service-column {
-            flex: 1;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin: 0 -3px;
-        }
-
-        /* contact */
-
-        .form-group {
-            margin-bottom: 20px;
-            text-align: left;
-        }
-
-        label {
-            display: inline-block;
-            width: 100px;
-            margin-bottom: 5px;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: calc(130% - 120px);
-            padding: 12px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            margin-bottom: 15px;
-            font-size: 16px;
-        }
-
-        textarea {
-            height: 110px;
-            resize: vertical;
-        }
-
-        .contact-form {
-            max-width: 500px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .button-container {
-            text-align: center;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        /* CSS for the menu */
-        .top-menu ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .top-menu ul li {
-            display: inline-block;
-            margin-right: 10px;
-        }
-
-        .top-menu ul li a {
-            text-decoration: none;
-            padding: 10px;
-            color: white;
-            position: relative;
-            transition: color 0.3s;
-        }
-
-        .top-menu ul li a:hover {
-            color: red;
-        }
-
-        .top-menu ul li a::after,
-        .top-menu ul li a::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 3px;
-            background-color: transparent;
-            bottom: 0;
-            left: 0;
-            transition: background-color 0.3s;
-        }
-
-        .top-menu ul li a:hover::after,
-        .top-menu ul li a:hover::before {
-            background-color: red;
-        }
-
-        /* portfolio */
-        .portfolio-item {
-            position: relative;
-            margin-bottom: 30px;
-        }
-
-        .portfolio-item h3 {
-            font-size: 24px;
-        }
-
-        .portfolio-item p {
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-
-        .image-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .image-gallery img {
-            width: 100%;
-            height: auto;
-            max-width: 300px;
-            border-radius: 5px;
-        }
-
-        .view-details {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            padding: 8px 16px;
-            font-size: 16px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .view-details:hover {
-            background-color: #0056b3;
-        }
-
-        .image-modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
-
-        .image-modal img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 5px;
-        }
-
-        .image-modal .close-btn {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            color: #fff;
-            font-size: 24px;
-            cursor: pointer;
-        }
-
-        /* Add margin to the top of the portfolio content */
-        #portfolio-content {
-            margin-top: 350px;
-        }
+        
     </style>
 </head>
 <body>
@@ -319,9 +109,9 @@
                 <h3>ICICI TRADE EMERGE</h3>
                 <p>Description of the project or achievement. Include details about your role, the problem you solved, and the outcome.</p>
                 <div class="image-gallery">
-                    <img src="Screenshot (238).png" alt="ICICI Trade Emerge" onclick="openImageModal('Screenshot (238).png')"> &nbsp;
-                    <img src="Screenshot (240).png" alt="ICICI Trade Emerge" onclick="openImageModal('Screenshot (240).png')"> &nbsp;
-                    <img src="Screenshot (242).png" alt="ICICI Trade Emerge" onclick="openImageModal('Screenshot (242).png')"> &nbsp;
+                    <img src="images/Screenshot (238).png" alt="ICICI Trade Emerge" onclick="openImageModal('images/Screenshot (238).png')"> &nbsp;
+                    <img src="images/Screenshot (240).png" alt="ICICI Trade Emerge" onclick="openImageModal('images/Screenshot (240).png')"> &nbsp;
+                    <img src="images/Screenshot (242).png" alt="ICICI Trade Emerge" onclick="openImageModal('images/Screenshot (242).png')"> &nbsp;
 
                 </div>
                 <a href="#" class="view-details">View Details</a>
@@ -331,8 +121,8 @@
                 <h3>Salary Portal</h3>
                 <p>Description of the project or achievement. Include details about your role, the problem you solved, and the outcome.</p>
                 <div class="image-gallery">
-                    <img src="WhatsApp Image 2024-03-11 at 12.41.41_6ec905ed.jpg" alt="Salary Portal" onclick="openImageModal('WhatsApp Image 2024-03-11 at 12.41.41_6ec905ed.jpg')"> &nbsp;
-                    <img src="WhatsApp Image 2024-03-11 at 15.46.30_1e9919c4.jpg" alt="Attendance" onclick="openImageModal('WhatsApp Image 2024-03-11 at 15.46.30_1e9919c4.jpg')"> &nbsp;
+                    <img src="images/WhatsApp Image 2024-03-11 at 12.41.41_6ec905ed.jpg" alt="Salary Portal" onclick="openImageModal('images/WhatsApp Image 2024-03-11 at 12.41.41_6ec905ed.jpg')"> &nbsp;
+                    <img src="images/WhatsApp Image 2024-03-11 at 15.46.30_1e9919c4.jpg" alt="Attendance" onclick="openImageModal('images/WhatsApp Image 2024-03-11 at 15.46.30_1e9919c4.jpg')"> &nbsp;
                 </div>
             </div>
             <!-- Add more portfolio items as needed -->
@@ -340,8 +130,8 @@
                 <h3>Karo Admission</h3>
                 <p>Description of the project or achievement. Include details about your role, the problem you solved, and the outcome.</p>
                 <div class="image-gallery">
-                    <img src="Screenshot (245).png" alt="Salary Portal" onclick="openImageModal('Screenshot (245).png')"> &nbsp;
-                    <img src="Screenshot (243).png" alt="Salary Portal" onclick="openImageModal('Screenshot (243).png')"> &nbsp;
+                    <img src="images/Screenshot (245).png" alt="Salary Portal" onclick="openImageModal('images/Screenshot (245).png')"> &nbsp;
+                    <img src="images/Screenshot (243).png" alt="Salary Portal" onclick="openImageModal('images/Screenshot (243).png')"> &nbsp;
                 </div>
             </div>
         </div>
