@@ -37,9 +37,7 @@
     <div id="about-content" class="sections">
         <div class="about-me">
             <h1 class="important">About Me</h1>
-            <h3>Well-qualified Web Developer familiar with a wide range of programming utilities and languages. <br/>I can be part of an
-                agile process and am always willing to learn new processes or technologies that the industry demands.<br/> A
-                collaborative team player with excellent technical abilities, offering 2+ years of experience in the software industry.
+            <h3>Experienced Web Developer with 2+ years in the software industry. Proficient in various programming languages and adaptable to new technologies. Collaborative team player with excellent technical skills. Passionate about continuous learning and growth in web development. Dedicated to delivering high-quality solutions that exceed expectations. Enthusiastic about the transformative potential of technology. Committed to maintaining a healthy work-life balance. Let's build something amazing together.
             </h3>
         </div>
 
@@ -102,36 +100,35 @@
         </div>
     </div>
 
-    <div id="portfolio-content" class="sections">
+     <!-- Portfolio Content -->
+     <div style="text-align: center;" id="portfolio-content" class="sections">
         <div class="portfolio-items">
-            <h2 class="important">Portfolio</h2>
+            <h2 style="text-align: center;"  class="important">My Projects</h2>
             <div class="portfolio-item">
-                <h3>ICICI TRADE EMERGE</h3>
-                <p>Description of the project or achievement. Include details about your role, the problem you solved, and the outcome.</p>
+                <h3>ICICI TRADE EMERGE</h3> 
+                <a  href="https://trade-emerge.icicibank.com/Trade/?utm_source=google&utm_medium=search&utm_campaign=icici-a4-trade-emerge-search-Brand-Exact-Feb-22&utm_content=google-search-icici-a4-trade-emerge-search-Brand-Exact-Feb-22-performance-na-cpc-Trade-Emerge-na-icici-trade-emerge&utm_term=icici-trade-emerge&utm_lms=google-search-icici-a4-trade-emerge-search-Brand-Exact-Feb-22-performance-na-cpc-Trade-Emerge-na-icici-trade-emerge&gad_source=1&gclid=Cj0KCQjw-r-vBhC-ARIsAGgUO2DG8Td59rcJzrnAM1W6mx_50VTziHMZZUYhcbk3yYU1FCPgWHQVLPYaAtXoEALw_wcB" class="view-details">View Details</a>
+                <p>Contributed to the development of ICICI TRADE EMERGE platform, leveraging HTML5, CSS3, and JavaScript, Jquery, Bootstrap and some of the inbuild themes linke Polo. Incorporated new features and functionalities to enhance user experience and streamline trading processes. Collaborated with the team to deliver high-quality solutions meeting project requirements and deadlines.</p> &nbsp;
                 <div class="image-gallery">
-                    <img src="images/Screenshot (238).png" alt="ICICI Trade Emerge" onclick="openImageModal('images/Screenshot (238).png')"> &nbsp;
-                    <img src="images/Screenshot (240).png" alt="ICICI Trade Emerge" onclick="openImageModal('images/Screenshot (240).png')"> &nbsp;
-                    <img src="images/Screenshot (242).png" alt="ICICI Trade Emerge" onclick="openImageModal('images/Screenshot (242).png')"> &nbsp;
-
-                </div>
-                <a href="#" class="view-details">View Details</a>
-            </div>
-            <br/>
-            <div class="portfolio-item">
-                <h3>Salary Portal</h3>
-                <p>Description of the project or achievement. Include details about your role, the problem you solved, and the outcome.</p>
-                <div class="image-gallery">
-                    <img src="images/WhatsApp Image 2024-03-11 at 12.41.41_6ec905ed.jpg" alt="Salary Portal" onclick="openImageModal('images/WhatsApp Image 2024-03-11 at 12.41.41_6ec905ed.jpg')"> &nbsp;
-                    <img src="images/WhatsApp Image 2024-03-11 at 15.46.30_1e9919c4.jpg" alt="Attendance" onclick="openImageModal('images/WhatsApp Image 2024-03-11 at 15.46.30_1e9919c4.jpg')"> &nbsp;
+                    <img src="images/Screenshot (238).png" alt="ICICI Trade Emerge" onclick="openImageModal('images/Screenshot (238).png')">
+                    <img src="images/Screenshot (240).png" alt="ICICI Trade Emerge" onclick="openImageModal('images/Screenshot (240).png')">
+                    <img src="images/Screenshot (242).png" alt="ICICI Trade Emerge" onclick="openImageModal('images/Screenshot (242).png')">
                 </div>
             </div>
-            <!-- Add more portfolio items as needed -->
+            <div class="portfolio-item">
+                <h3>Salary Portal & Attendance</h3>
+                <p>Contributed & Implementing to Salary Portal & Attendance web interfaces using react.js, html5, css3, JavaScript & some themes for Frontend, PHP and PostgreSQL for backend.</p>
+                <div class="image-gallery">
+                    <img src="images/WhatsApp Image 2024-03-11 at 12.41.41_6ec905ed.jpg" alt="Salary Portal" onclick="openImageModal('images/WhatsApp Image 2024-03-11 at 12.41.41_6ec905ed.jpg')">
+                    <img src="images/WhatsApp Image 2024-03-11 at 15.46.30_1e9919c4.jpg" alt="Attendance" onclick="openImageModal('images/WhatsApp Image 2024-03-11 at 15.46.30_1e9919c4.jpg')">
+                </div>
+            </div>
             <div class="portfolio-item">
                 <h3>Karo Admission</h3>
-                <p>Description of the project or achievement. Include details about your role, the problem you solved, and the outcome.</p>
+                <p>Designed responsive interfaces for KaroAdmission website, optimizing its performance
+                    based on the client needs.</p>
                 <div class="image-gallery">
-                    <img src="images/Screenshot (245).png" alt="Salary Portal" onclick="openImageModal('images/Screenshot (245).png')"> &nbsp;
-                    <img src="images/Screenshot (243).png" alt="Salary Portal" onclick="openImageModal('images/Screenshot (243).png')"> &nbsp;
+                    <img src="images/Screenshot (245).png" alt="Salary Portal" onclick="openImageModal('images/Screenshot (245).png')">
+                    <img src="images/Screenshot (243).png" alt="Salary Portal" onclick="openImageModal('images/Screenshot (243).png')">
                 </div>
             </div>
         </div>
@@ -177,7 +174,7 @@
     function openImageModal(imageUrl) {
         var modal = document.createElement('div');
         modal.classList.add('image-modal');
-        modal.innerHTML = '<img src="' + imageUrl + '" alt="Full-size Image"><span class="close-btn" onclick="closeImageModal()">&times;</span>';
+        modal.innerHTML = '<span class="close-btn" onclick="closeImageModal()">&times;</span><img src="' + imageUrl + '" alt="Full-size Image">';
         document.body.appendChild(modal);
         document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
     }
